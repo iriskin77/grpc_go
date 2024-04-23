@@ -16,3 +16,7 @@ protoc -I proto proto/sso/*.proto --go_out=./gen/go --go_opt=paths=source_relati
 + **proto/sso/sso.proto** - путь до конкретного прото файла, который необходимо скомпилировать;
 + **--go_out=./gen/go** - путь, куда будут сохраняться скомпилированные файлы;
 + **--go-grpc_out=./gen/go/** - путь, куда будет сохраняться go-grpc код;
+
+## Запуск приложения:
+
++ go run cmd/sso/main.go --config=./config/local.yaml
