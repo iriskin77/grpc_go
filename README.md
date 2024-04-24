@@ -20,3 +20,7 @@ protoc -I proto proto/sso/*.proto --go_out=./gen/go --go_opt=paths=source_relati
 ## Запуск приложения:
 
 + go run cmd/sso/main.go --config=./config/local.yaml
+
+## Создание миграций
+
++ go run ./cmd/migrator --storage-path=./storage/sso.db --migrations-path=./migrations
